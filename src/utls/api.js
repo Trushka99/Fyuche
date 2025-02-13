@@ -1,7 +1,7 @@
 import { Octokit } from "octokit";
 
 const octokit = new Octokit({
-  auth: `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`,
+  auth: process.env.STATUS,
 });
 
 async function fetchAllRepos(userName, page) {
