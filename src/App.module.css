@@ -1,0 +1,39 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  min-height: 900px;
+  align-items: center;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.1;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+    transform: rotate(100deg);
+  }
+}
+
+.line {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  animation: fade 2s linear infinite;
+}
+.input {
+  height: 64px;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.repos_cont {
+  width: 100%;
+}
